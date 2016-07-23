@@ -117,15 +117,7 @@ namespace EnvMapGen
 			}
 		}
 
-		static void CheckForUndefined(){ // *decapricated* function that checks for undefined biomes and alerts user/dev
-			for (int i = 0; i < mapSize; i++) {
-				for (int ii = 0; ii < mapSize; ii++) {
-					if (map [i, ii].biome == "Undefined") {
-						Console.WriteLine ("Undefined at " + i + ", " + ii + "  -> Temp: " + map [i, ii].temp + " C / Humidity: " + map [i, ii].humidity + " %");
-					}
-				}
-			}
-		}
+
 
 		static void CreateAltitude(){
 
