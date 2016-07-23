@@ -97,20 +97,15 @@ namespace EnvMapGen
                                                 } else if(humidity > 75){
                                                         map[i, ii].prefix3 = "Humid ";
                                                 }
-												if(map [i, ii].biome == "Water" || map [i, ii].biome == "Ice"){
-													map[i, ii].prefix = "";
-													map[i, ii].prefix2 = "";
-													map[i, ii].prefix3 = "";
-													if(map [i, ii].biome == "Water"){
-														map[i, ii].popType = "";
-														map[i, ii].population = 0;
-													}
-												}
-
-
-
-
-
+						if(map [i, ii].biome == "Water" || map [i, ii].biome == "Ice"){
+							map[i, ii].prefix = "";
+							map[i, ii].prefix2 = "";
+							map[i, ii].prefix3 = "";
+							if(map [i, ii].biome == "Water"){
+								map[i, ii].popType = "";
+								map[i, ii].population = 0;
+							}
+						}
 					}
 				}
 			}
