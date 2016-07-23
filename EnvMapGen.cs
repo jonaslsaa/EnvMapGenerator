@@ -4,7 +4,7 @@ namespace EnvMapGen
 {
 	class MainClass
 	{
-		public static int mapSize = 8; // Map size, x by x
+		public static int mapSize = 8; // Map size, x by x. change for bigger or smaller maps
 
 		public static Random rnd = new Random();
 		public static km[,] map = new km[mapSize, mapSize];
@@ -31,7 +31,7 @@ namespace EnvMapGen
 			for (int i = 0; i < mapSize; i++) {
 				for (int ii = 0; ii < mapSize; ii++) {
 
-					map [i, ii] = new km (); // Initializing array object
+					map [i, ii] = new km (); // initializing array object
 					bool isUndef = true;
 					while (isUndef) { // checks if biome atributed is undefined and re-atributed the current km
 						int temp = rnd.Next (-10, 50);
@@ -95,14 +95,14 @@ namespace EnvMapGen
                                                         map[i, ii].prefix2 = "Burning ";
                                                 }
 
-						// Sets prefixes to the of the (humidity)
+						// Sets prefixes to the name of the place (humidity)
 						if(humidity < 30){
                                                         map[i, ii].prefix3 = "Dry ";
                                                 } else if(humidity > 75){
                                                         map[i, ii].prefix3 = "Humid ";
                                                 }
 
-						// Re-checks if the biome is water and makes sure it's name and other variables makes sense
+						// rechecks if the biome is water or ice and makes sure it's name and other variables make sense
 						if(map [i, ii].biome == "Water" || map [i, ii].biome == "Ice"){
 							map[i, ii].prefix = "";
 							map[i, ii].prefix2 = "";
