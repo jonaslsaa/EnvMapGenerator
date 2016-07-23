@@ -15,7 +15,6 @@ namespace EnvMapGen
 
 			CreateEnv (); // creates biomes, population and other key variables
 			CreateAltitude (); // create mountains
-			CheckForUndefined (); // error checking in biomes for devs
 
 			while (drawEnv) {
 				Console.Clear();
