@@ -21,7 +21,6 @@ namespace EnvMapGen
 				Console.WriteLine (mapSize+" km2 map\n");
 				Console.WriteLine(DrawEnv ());
 				MoveCursor ();
-				//System.Threading.Thread.Sleep(250);
 			}
 		}
 
