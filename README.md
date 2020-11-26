@@ -3,4 +3,4 @@ Generate X by X maps with biomes, population, humidity, temperature and other co
 
 
 ## Builds
-https://github.com/TheVoxcraft/EnvMapGenerator/tree/dev/build
+https://github.com/TheVoxcraft/EnvMapGenerator/releases/
